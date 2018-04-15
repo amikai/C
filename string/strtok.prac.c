@@ -1,16 +1,17 @@
 /* Extract tokens from string
- * 
+ *
  */
 
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main()
+{
     char str[] = "I am a handsome-handsome man, but you are not.";
-    char* pch;
+    char *pch;
 
     pch = strtok(str, " ,-.");
-    while(pch != NULL) {
+    while (pch != NULL) {
         printf("%s\n", pch);
         pch = strtok(NULL, " ,-.");
     }

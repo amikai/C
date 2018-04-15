@@ -9,13 +9,13 @@ int main()
 {
     char str[] = "This is a sample string";
     char key[] = "aeiou";
-    char* pch = str;
-    
+    char *pch = str;
+
     pch = strpbrk(str, key);
     while (pch != NULL) {
         printf("%s\n", pch);
         pch = strpbrk(pch + 1, key);
     }
-    
+
     return 0;
 }
